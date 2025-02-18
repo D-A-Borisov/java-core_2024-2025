@@ -1,4 +1,4 @@
-package Timus.task2100;
+package Timus_task.task2100;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
