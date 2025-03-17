@@ -2,10 +2,8 @@ package lab10.task01;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
-
 import java.io.FileInputStream;
 import java.io.IOException;
-
 public class ReadXLSX {
     public static void main(String[] args) throws IOException {
         String filepath = "src/lab10/task01/example3.xlsx";
@@ -19,7 +17,6 @@ public class ReadXLSX {
             }
             System.out.println();
         }
-
         workbook.close();
         inputStream.close();
     }

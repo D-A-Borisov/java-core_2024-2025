@@ -2,10 +2,8 @@ package lab10.task01;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 public class CreateXLSX {
     public static void main(String[] args) throws IOException {
         XSSFWorkbook workbook = new XSSFWorkbook();

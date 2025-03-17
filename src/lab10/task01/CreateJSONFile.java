@@ -3,7 +3,6 @@ package lab10.task01;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import java.io.FileWriter;
-
 public class CreateJSONFile {
     public static void main(String[] args) {
         JSONObject library = new JSONObject();
@@ -26,7 +25,7 @@ public class CreateJSONFile {
 
         try (FileWriter file = new FileWriter("src/lab10/task01/books-json.json")) {
             file.write(library.toJSONString());
-            System.out.println("Файл успешно создан!");
+            System.out.println("JSON - Файл успешно создан!");
         } catch (Exception e) {
             e.printStackTrace();
         }

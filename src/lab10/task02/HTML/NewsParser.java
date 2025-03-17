@@ -4,11 +4,9 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class NewsParser {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -41,9 +39,10 @@ public class NewsParser {
 
     // Метод для парсинга новостей и сохранения их в файл
     private static void parseAndSaveNews() {
-        String url = "https://urfu.ru/get-news/ru/news" + "/?cols=3&pid=53%2C11367%2C30302&" +
-                "categories=1%2C10%2C12%2C130%2C155%2C2%2C212%2C232%2C264%2C27%2C277%2C3%2C33%2C4%2C5%2C52%2C6%2C7%2C8%2C9%2C90%2C93%2C96&" +
-                "fullmode=1&offset=0&rows=5&selected=0&page=54&show_categories=1";
+        String url = "https://urfu.ru/get-news/ru/news" +
+                "/?cols=3&pid=53%2C11367%2C30302&" +
+                "/categories=1%2C10%2C12%2C130%2C155%2C2%2C212%2C232%2C264%2C27%2C277%2C3%2C33%2C4%2C5%2C52%2C6%2C7%2C8%2C9%2C90%2C93%2C96&" +
+                "/fullmode=1&offset=0&rows=5&selected=0&page=54&show_categories=1";
 
         int maxRetries = 3; // Максимальное количество попыток подключения
         int retryCount = 0;

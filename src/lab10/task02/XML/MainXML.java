@@ -1,7 +1,6 @@
 package lab10.task02.XML;
 
 import java.util.Scanner;
-
 public class MainXML {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

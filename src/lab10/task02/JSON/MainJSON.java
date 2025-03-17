@@ -1,9 +1,6 @@
 package lab10.task02.JSON;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import java.util.Scanner;
-
 public class MainJSON {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

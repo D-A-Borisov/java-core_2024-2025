@@ -6,35 +6,27 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
-
 public class XMLBookParser {
     private String filePath;
-
     public XMLBookParser(String filePath) {
         this.filePath = filePath;
     }
-
     // Метод для добавления новой книги
     public void addBook(String title, String author, String year) {
         try {
-            // Загрузка XML-документа
             Document doc = loadDocument();
             Element rootElement = doc.getDocumentElement();
 
-            // Создание нового элемента <book>
             Element newBook = doc.createElement("book");
 
-            // Создание элемента <title>
             Element newTitle = doc.createElement("title");
             newTitle.appendChild(doc.createTextNode(title));
             newBook.appendChild(newTitle);
 
-            // Создание элемента <author>
             Element newAuthor = doc.createElement("author");
             newAuthor.appendChild(doc.createTextNode(author));
             newBook.appendChild(newAuthor);
 
-            // Создание элемента <year>
             Element newYear = doc.createElement("year");
             newYear.appendChild(doc.createTextNode(year));
             newBook.appendChild(newYear);

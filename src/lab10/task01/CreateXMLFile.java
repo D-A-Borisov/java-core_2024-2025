@@ -2,19 +2,15 @@ package lab10.task01;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
 import java.io.File;
-
-
 public class CreateXMLFile {
     public static void main(String[] args) {
         try {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-
             // Создание корневого элемента
             Document doc = docBuilder.newDocument();
             Element rootElement = doc.createElement("library");
